@@ -1,12 +1,25 @@
-export const Data = [{
+export const Data = [
+    {
+        name: "Nagaraj Pandith",
+        username: "nagarajpandith",
+        branch: "CSE",
+        year: "3rd",
+    },
+    {
+        name: "Prajwal Suvarna",
+        username: "prajwalsuvarna",
+        branch: "CSE",
+        year: "3rd",
+    },
+    {
         name: "Amogh",
         username: "akak",
         branch: "ai",
         year: "3rd",
     },
     {
-        name: "Nagaraj Pandith",
-        username: "nagarajpandith",
+        name: "Aaron Jevil Nazazreth",
+        username: "aaronjn",
         branch: "CSE",
         year: "3rd",
     },
@@ -24,7 +37,7 @@ export const Data = [{
     },
     {
         name: "Prathik K Acharya",
-        username: "nagarajpandith",
+        username: "Prathik-2002",
         branch: "CSE",
         year: "3rd",
     },
@@ -157,18 +170,12 @@ export const Data = [{
         year: "3rd"
     },
     {
-        name: "avavavavavavavavavavava",
-        username: "ACAVaVAVAVAAVAV",
+        name: "Avaneesh",
+        username: "avash45",
     },
     {
         name: "Geshal Mendonca",
         username: "geshal",
-        branch: "CSE",
-        year: "3rd",
-    },
-    {
-        name: "Prajwal Suvarna",
-        username: "prajwalsuvarna",
         branch: "CSE",
         year: "3rd",
     },
