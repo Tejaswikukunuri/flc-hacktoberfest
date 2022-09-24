@@ -11,6 +11,7 @@ export const Data =[
         username: "Akshatha305 $ ",
         branch: "CSE",
         year: "3rd",
+        status : "Hackotober champ",
     }
     
 ];
