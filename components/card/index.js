@@ -3,6 +3,8 @@ import {AiFillGithub} from 'react-icons/ai';
 import Link from 'next/link.js';
 import Image from 'next/image.js';
 
+import { motion } from 'framer-motion';
+
 export default function CardComp() {
   return (
     <div className="backg">
@@ -11,6 +13,22 @@ export default function CardComp() {
     </div>
     <div className="flex flex-wrap  min-h-[900px] align-center justify-center pb-10 text-white">
         {Data.map((person, index) => (
+            <motion.div key={index} whileHover={{
+              position: 'relative',
+              zIndex: 1,
+              scale: [1, 1.1, 1.05],
+              rotate: [0, 10, -10, 0],
+              transition: {
+                duration: .2
+              },
+              filter: [
+                'hue-rotate(0) contrast(100%)',
+                'hue-rotate(360deg) contrast(200%)',
+                'hue-rotate(45deg) contrast(300%)',
+                'hue-rotate(0) contrast(100%)'
+              ],
+            }}>
+            
             <div key={index} className="w-[250px] min-h-[350px] lg:min-w-[300px] lg:min-h-[400px] m-5 rounded-xl hover:rotate-2 transition duration-300 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg fade-in">
                 <div class="w-full h-48 lg:h-72 relative">
                   <Image src={`https://github.com/${person.username}.png`} layout="fill" objectFit="cover" alt="profile picture" className="rounded-t-xl"/>
@@ -36,6 +54,8 @@ export default function CardComp() {
                 </div>
                 </div>
             </div>
+
+          </motion.div>
         ))}
     </div>
     <div className="bg-gray-600 h-20 flex items-center place-content-center">
