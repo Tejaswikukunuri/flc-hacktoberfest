@@ -25,6 +25,12 @@ export const Data = [
         year: "3rd",
     },
     {
+        name: "Keerthan N S",
+        username: "keerthan2002",
+        branch: "CSE",
+        year: "3rd",
+    },
+    {
         name: "Amogh",
         username: "akak",
         branch: "ai",
